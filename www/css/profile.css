@@ -1,0 +1,202 @@
+.equipence{
+	width:232px;
+	height:232px;
+	border:1px solid #aaaaaa;
+	position:relative;
+	background-color:#dddddd;
+}
+.item_profile{
+	position:relative;
+	width:64px;
+	height:64px;
+}
+.bug button{
+	width:100%;
+	margin:0px;
+}
+.bug{
+	border-right:1px solid #aaaaaa;
+}
+.bug td{
+	width:64px;
+	height:64px;
+	padding:0px;
+}
+.equipence .helmet{
+	position:absolute;
+	left:84px;
+	top:10px;
+	border:1px solid #aaaaaa;
+	z-index:8;
+}
+.equipence .weapon{
+	position:absolute;
+	left:10px;
+	top:84px;
+	border:1px solid #aaaaaa;
+	z-index:9;
+}
+.equipence .bots{
+	position:absolute;
+	left:84px;
+	top:158px;
+	border:1px solid #aaaaaa;
+	z-index:10;
+}
+.equipence .dress{
+	position:absolute;
+	left:84px;
+	top:84px;
+	border:1px solid #aaaaaa;
+	z-index:9;
+}
+.equipence .gloves{
+	position:absolute;
+	left:158px;
+	top:84px;
+	border:1px solid #aaaaaa;
+	z-index:9;
+}
+.equipence .glass{
+	position:absolute;
+	left:10px;
+	top:10px;
+	border:1px solid #aaaaaa;
+	z-index:8;
+}
+.equipence .neclase{
+	position:absolute;
+	left:10px;
+	top:158px;
+	border:1px solid #aaaaaa;
+	z-index:10;
+}
+.equipence .ring{
+	position:absolute;
+	left:158px;
+	top:158px;
+	border:1px solid #aaaaaa;
+	z-index:10;
+}
+.item1{
+	background-image:url('../images/items/1.png') !important;
+}
+.item2{
+	background-image:url('../images/items/2.png') !important;
+}
+.item3{
+	background-image:url('../images/items/3.png') !important;
+}
+.item4{
+	background-image:url('../images/items/4.png') !important;
+}
+.item5{
+	background-image:url('../images/items/5.png') !important;
+}
+.item6{
+	background-image:url('../images/items/6.png') !important;
+}
+.item7{
+	background-image:url('../images/items/7.png') !important;
+}
+.item8{
+	background-image:url('../images/items/8.png') !important;
+}
+.item9{
+	background-image:url('../images/items/9.png') !important;
+}
+.item10{
+	background-image:url('../images/items/10.png') !important;
+}
+.item11{
+	background-image:url('../images/items/11.png') !important;
+}
+.item12{
+	background-image:url('../images/items/12.png') !important;
+}
+.item13{
+	background-image:url('../images/items/13.png') !important;
+}
+.item14{
+	background-image:url('../images/items/14.png') !important;
+}
+.item15{
+	background-image:url('../images/items/15.png') !important;
+}
+.item16{
+	background-image:url('../images/items/16.png') !important;
+}
+.item17{
+	background-image:url('../images/items/17.png') !important;
+}
+.item18{
+	background-image:url('../images/items/18.png') !important;
+}
+.item19{
+	background-image:url('../images/items/19.png') !important;
+}
+.item20{
+	background-image:url('../images/items/20.png') !important;
+}
+.item21{
+	background-image:url('../images/items/21.png') !important;
+}
+.item22{
+	background-image:url('../images/items/22.png') !important;
+}
+.item23{
+	background-image:url('../images/items/23.png') !important;
+}
+.item24{
+	background-image:url('../images/items/24.png') !important;
+}
+.item25{
+	background-image:url('../images/items/25.png') !important;
+}
+.item26{
+	background-image:url('../images/items/26.png') !important;
+}
+.item27{
+	background-image:url('../images/items/27.png') !important;
+}
+.item28{
+	background-image:url('../images/items/28.png') !important;
+}
+.item29{
+	background-image:url('../images/items/29.png') !important;
+}
+.item30{
+	background-image:url('../images/items/30.png') !important;
+}
+.item31{
+	background-image:url('../images/items/31.png') !important;
+}
+.item32{
+	background-image:url('../images/items/32.png') !important;
+}
+.item33{
+	background-image:url('../images/items/33.png') !important;
+}
+.item_lvl{
+	position:absolute;
+	width:31px !important;
+	height:17px !important;
+	bottom:0px;
+	right:0px;
+	background-repeat:no-repeat;
+	text-align:center;
+	font-size:14px;
+	font-weight:900;
+}
+.item_standart{
+
+}
+.item_advansed{
+	background-image:url('../images/items/advansed.png');
+}
+.item_vip{
+	background-image:url('../images/items/vip.png');
+}
+.item_gold{
+	background-image:url('../images/items/gold.png');
+}

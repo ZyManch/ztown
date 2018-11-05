@@ -1,0 +1,703 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+a, a:visited {
+    color: #555555;
+}
+
+a:hover {
+    color: #999999;
+}
+
+button {
+    border: 1px solid #000000;
+    background-color: #d6d6d6;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
+    margin: 0px 1px 1px 0px;
+}
+button:hover {
+    border: 1px solid #4fff6b;
+    box-shadow: 0px 0px 2px black;
+    margin: 1px 0px 0px 1px;
+}
+button:disabled {
+    border: 1px solid #a70000;
+    cursor: default;
+    box-shadow: 0px 0px 3px #a70000;
+    margin: 1px 0px 0px 1px;
+}
+.box {
+    margin: 200px auto;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    width: 300px;
+}
+
+.box td {
+    width: 100px;
+    text-align: center;
+}
+
+.header {
+    height: 50px;
+
+}
+
+.menuline {
+    height: 30px;
+    border-top: 1px solid black;
+    border-bottom: 2px solid #dddddd;
+    background-color: #aaaaaa;
+}
+
+.menu {
+    float: left;
+    width: 150px;
+    border-right: 1px dashed #aaaaaa;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.notreaded {
+    font-weight: 700;
+}
+.content {
+    margin-left: 150px;
+    min-height: 520px;
+}
+
+.user_menu {
+    margin-left: 150px;
+    border-bottom: 1px dashed #aaaaaa;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.user_menu .item {
+    width: 200px;
+    border-right: 1px dashed #aaaaaa;
+    float: left;
+    text-align: center;
+    background-color: white;
+    position: relative;
+}
+
+.user_menu .item .text {
+    height: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.user_menu .item .submenu {
+    display: none;
+    background-color: white;
+    border: 1px dashed #aaaaaa;
+    border-top: 0px;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.user_menu .item .submenu div {
+    width: 200px;
+    height: 30px;
+}
+
+.spacer {
+    margin: 5px;
+}
+
+.debug {
+    width: 300px;
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    right: 0px;
+    border-left: 1px dashed #aaaaaa;
+    /*
+    display:none;
+    /**/
+}
+
+.footer {
+    border-bottom: 1px solid black;
+    border-top: 2px solid #dddddd;
+    background-color: #aaaaaa;
+    clear: both;
+    text-align: center;
+}
+
+.red_text {
+    color: red;
+    text-align: center;
+}
+
+.lime_text {
+    color: lime;
+    text-align: center;
+}
+
+.blue_text {
+    color: blue;
+    text-align: center;
+}
+
+#message_box {
+    display: none;
+}
+
+.message_box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #666666;
+    border-bottom: 2px solid #666666;
+    background-color: white;
+    z-index: 1000;
+}
+
+.message_box .title {
+    height: 22px;
+    background-color: #777777;
+    cursor: move;
+    padding-left: 20px;
+    color: white;
+    font-weight: 900;
+}
+
+.message_box .title .close {
+    cursor: pointer;
+    background-image: url('../images/info/close.png');
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-right: 2px;
+}
+
+.message_box .new_message {
+    background-color: #dddddd;
+    border-top: 1px solid #666666;
+    border-bottom: 2px solid #dddddd;
+    margin: 2px;
+}
+
+.message_box .new_message .head {
+    height: 30px;
+    background-color: #bbbbbb;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.message_box .new_message .body {
+    padding: 10px;
+    display: none;
+}
+
+#map {
+    position: relative;
+    border: 1px solid black;
+    z-index: 0;
+    background-color: black;
+}
+
+#map #info {
+    position: absolute;
+    z-index: 20;
+    display: none;
+    width: 300px;
+    height: 130px;
+    background-color: white;
+    border: 1px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+
+.to_right {
+    background-image: url(../images/arrows/1.png);
+    width: 142px;
+    height: 113px;
+    position: absolute;
+    left: 680px;
+    top: 5px;
+
+}
+
+.to_left {
+    background-image: url(../images/arrows/3.png);
+    width: 142px;
+    height: 113px;
+    position: absolute;
+    left: 5px;
+    top: 310px;
+}
+
+.to_top {
+    background-image: url(../images/arrows/4.png);
+    width: 142px;
+    height: 113px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.to_bottom {
+    background-image: url(../images/arrows/2.png);
+    width: 142px;
+    height: 113px;
+    position: absolute;
+    left: 680px;
+    top: 310px;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px dashed #aaaaaa;
+    margin: 10px 10px;
+}
+
+table.default {
+    border-right: 2px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    margin: 15px;
+    min-width: 650px;
+}
+
+table.default th {
+    background-color: #aaaaaa;
+    color: white;
+    border-left: 2px solid white;
+    padding: 5px;
+}
+
+table.default td {
+    border-left: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    margin: 0px;
+    padding: 10px;
+}
+
+table.default td.bold {
+    border-left: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    margin: 0px;
+    padding: 10px;
+}
+
+table.default input, table.default textarea, table.default select {
+    border: 1px solid #aaaaaa;
+    background-color: #dddddd;
+    border-left: 1px solid #777777;
+    border-top: 1px solid #777777;
+}
+table.default tr.active td {
+    background-color: #e6ffe2;
+}
+.moved_tile {
+    position: absolute;
+    border-width: 0px;
+}
+
+.moved {
+    cursor: pointer;
+    min-width: 220px !important;
+    width: 300px !important;
+    margin-left: 802px;
+}
+
+.moved td {
+    width: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hovered_td {
+    background-color: #cccccc;
+}
+
+.money {
+    color: #008800;
+    font-weight: 700;
+}
+.sorter ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sorter li{
+    margin: 0;
+    padding: 0px 4px;
+    line-height: 20px;
+    float: left;
+}
+.hovered_input {
+    background-color: #cccccc;
+    border: 1px solid #dddddd;
+    border-left: 1px solid #999999;
+    border-top: 1px solid #999999;
+}
+
+.tile_info {
+    border: 0px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.confirm {
+    position: fixed;
+    left: 30%;
+    top: 30%;
+    width: 40%;
+    height: 40%;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    background-color: white;
+}
+
+.confirm div {
+    margin: 30px;
+    text-align: center;
+}
+
+button {
+    width: 180px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+button img {
+    /* float:left;*/
+    vertical-align: middle;
+}
+
+.online {
+    color: #44ff44;
+}
+
+.timecurse {
+    color: #0000cc;
+}
+
+.timecurseout {
+    color: red;
+}
+
+.pages {
+    min-width: 700px;
+}
+
+.pages .space {
+    height: 35px;
+    width: 30px;
+    border-bottom: 1px solid #777777;
+}
+
+.pages .endspace {
+    height: 35px;
+    border-bottom: 1px solid #777777;
+    border-left: 2px solid #777777;
+
+}
+
+.pages .page {
+    border: 1px solid #777777;
+    border-right-width: 0px;
+    padding: 5px;
+    background-color: #aaaaaa;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.pages .page a, .pages .page a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.pages .active {
+    background-color: white;
+    border-bottom-width: 0px;
+    height: 36px;
+}
+
+.pages .pagecontent {
+    border: 2px solid #777777;
+    border-top-width: 0px;
+    border-left-width: 1px;
+    padding: 5px;
+}
+
+.memo_smiles {
+    width: 150px;
+    float: left
+}
+
+.memo_smiles img {
+    cursor: pointer;
+    border-width: 0px;
+    margin: 2px;
+}
+
+.memo_text {
+    margin-left: 150px;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.memo_text textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.forum_reply {
+    float: right;
+    width: 90px;
+    height: 25px;
+}
+
+.autohint {
+    position: absolute;
+    bottom: 100%;
+    right: 0px;
+    width: 200px;
+    border: 1px solid #aaaaaa;
+    background-color: #eeeeee;
+    display: none;
+    padding: 3px;
+    text-align: left;
+    font-weight: 200 !important;
+}
+.status{
+    background-color: white;
+    border: 1px dashed #000000;
+    position: absolute;
+    left: 450px;
+    top: 300px;
+    width: 300px;
+    padding: 10px;
+    z-index: 100;
+}
+.status div{
+    text-align: center;
+    padding-top: 30px;
+}
+.left_margin {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.hp_max {
+    height: 20px;
+    background-image: url('../images/templates/progressbaroff.png');
+    position: relative;
+    margin: 10px 5px;
+}
+
+.hp_max .hp {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background-image: url('../images/templates/progressbaron.png');
+}
+
+.hp_max .text {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    z-index: 2;
+}
+
+.smartydebug, .smartydebug  h1, .smartydebug  h2, .smartydebug  td, .smartydebug  th, .smartydebug  p {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 0.9em;
+    margin: 1px;
+    padding: 0;
+}
+
+.smartydebug h1 {
+    margin: 0;
+    text-align: left;
+    padding: 2px;
+    background-color: #f0c040;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.smartydebug h2 {
+    background-color: #9B410E;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    padding: 2px;
+    border-top: 1px solid black;
+}
+
+.smartydebug {
+    background: black;
+}
+
+.smartydebug p, .smartydebug  table, .smartydebug div {
+    background: #f0ead8;
+}
+
+.smartydebug p {
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.smartydebug table {
+    width: 100%;
+}
+
+.smartydebug th, .smartydebug td {
+    font-family: monospace;
+    vertical-align: top;
+    text-align: left;
+    width: 50%;
+}
+
+.smartydebug td {
+    color: green;
+}
+
+.odd {
+    background-color: #eeeeee;
+}
+
+.even {
+    background-color: #fafafa;
+}
+
+.exectime {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#table_assigned_vars td {
+    padding: 10px;
+}
+
+#table_assigned_vars th {
+    color: blue;
+    padding: 10px;
+    font-weight: 900;
+}
+
+#table_config_vars th {
+    color: maroon;
+}
+
+.smarty_ul {
+    margin: 0px;
+    padding: 0px;
+    clear: left;
+}
+
+.smarty_ul li {
+    display: block;
+    float: left;
+    width: 90px;
+    height: 20px;
+    text-align: center;
+}
+
+.smarty_ul li a {
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: #f0c040;
+    border: 1px solid #9B410E;
+}
+
+.smarty_selected {
+    background-color: #9B410E !important;
+    color: white !important;
+}
+.errorMessage{
+    color:red;
+}
+.offline, .online {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    box-shadow: 0px 0px 2px 0px #444444;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+.offline {
+    background-color: red;
+}
+.online {
+    background-color: lime;
+}
+.oauth a,.oauth a:visited{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    margin: 2px;
+}
+.oauth a:hover{
+    box-shadow: 0px 0px 5px black;
+}
+.oauth .vk{
+    background-image: url('../images/oauth/vk.png');
+}
+.oauth .twitter{
+    background-image: url('../images/oauth/twitter.png');
+}
+.oauth .facebook{
+    background-image: url('../images/oauth/facebook.png');
+}
+.avatar {
+    position: relative;
+}
+.avatar label{
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.avatar input{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+}

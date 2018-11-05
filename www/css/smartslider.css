@@ -1,0 +1,69 @@
+﻿.jscroller
+{
+	position: static;
+	z-index: 998;
+}
+.slider
+{
+	position: absolute;
+	z-index: 1000;
+}
+.inner
+{
+	width: 1px;
+	height: 100%;
+	z-index: 999;
+}
+.lgripper
+{
+	position: relative;
+	z-index: 1001;
+	top: 0px;
+	border: none;
+	outline: none;
+}
+.ticks
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: absolute;
+	z-index: 997;
+}
+.ticks li
+{
+	display: inline;
+	float: left;
+	font-size: xx-small;
+}
+.slider.style1
+{
+	background-color: #D7D7D7;
+    background-image: url("../images/templates/progressbaroff.png");
+	border: solid 1px #B6B6B6;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+.inner.style1
+{
+	background-color: #DFECF4;
+    background-image: url("../images/templates/progressbaron.png");
+	-moz-box-shadow: 0 1px 2px rgba(17, 35, 45, 0.6) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(17, 35, 45, 0.6) inset;
+    font-weight: bold;
+    text-align: right;
+}
+.lgripper.style1
+{
+    background-color: #dd2710;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+}
+#navar {
+    width: 350px;
+}
